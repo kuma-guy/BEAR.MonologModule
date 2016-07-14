@@ -1,0 +1,30 @@
+{
+  "name": "kuma-guy/monolog-module",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Shingo Kumagai",
+      "email": "shingo4092@gmail.com"
+    }
+  ],
+  "require": {
+    "php": ">=5.5.0",
+    "ray/di": "^2.3",
+    "monolog/monolog": "^1.20",
+    "bear/app-meta": "^1.0"
+  },
+  "require-dev": {
+    "bear/middleware": "^0.1.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "BEAR\\MonologModule\\": "src/"
+    }
+  },
+  "autoload-dev":{
+    "psr-4":{
+      "BEAR\\MonologModule\\": "tests/",
+      "FakeVendor\\Sandbox\\": "tests/Fake/FakeVendor/Sandbox/"
+    }
+  }
+}
